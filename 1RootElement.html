@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+	<div id="root">
+	</div>
+</body>
+
+
+<script>
+	let rootElement = document.getElementById("root")
+
+	let timer = 0;
+	setInterval(() => {
+		timer += 1
+		rootElement.innerHTML = "<div><h1> hello! </h1> <div> Timer" + timer + "</div></div>"
+		timerElement.innerText = timer
+	}, 1000)
+</script>
+
+</html>
