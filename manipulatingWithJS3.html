@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+	<div>
+		<button id="button">Click Me</button>
+	</div>
+
+	<div>
+		Counter:
+		<span id="counter-container">0</span>
+	</div>
+
+	<div>
+		<span id="timer-container">0</span>
+	</div>
+</body>
+
+
+<script>
+	// Our Logic:
+	let buttonElement = document.getElementById("button")
+	let counter = 0
+	button.addEventListener("click", function () {
+		counter += 1
+		console.log("Counter is: ", counter)
+		// Manually update the element in the HTML using our results from JavaScript
+	})
+	let timer = 0;
+	setInterval(() => {
+		timer += 1
+	}, 1000)
+
+
+
+	// Some code that updates the page:
+	function UpdatePage() {
+		let counterElement = document.getElementById("counter-container")
+		counterElement.innerText = counter
+		let timerElement = document.getElementById("timer-container")
+		timerElement.innerText = timer
+	}
+	setInterval(() => {
+		UpdatePage()
+	}, 1000)
+</script>
+
+</html>
