@@ -1,6 +1,7 @@
 To use this repo:
 
 Make sure you have NodeJS installed: https://nodejs.org/en
+
 Run the following commands:
 
 1. Go into the react folder:

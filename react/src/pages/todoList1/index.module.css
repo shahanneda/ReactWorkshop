@@ -1,0 +1,25 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+
+.todoListWrapper {
+	width: 50%;
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	height: 70vh;
+	overflow-y: auto;
+}
+
+.todoListItemWrapper {
+	padding: 10px;
+	border: 1px solid white;
+	margin: 1px;
+	background: gray;
+	display: flex;
+	gap: 10px;
+	text-align: center;
+}
