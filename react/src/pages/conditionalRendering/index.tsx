@@ -7,9 +7,9 @@ export default function ApiCallsRaw() {
   return (
     <div>
       <ChildComponent shouldSayHi={true} />
+      <ChildComponent shouldSayHi /> {/*Equivalent to above` */}
       <ChildComponent shouldSayHi={false} />
       <ChildComponent shouldSayHi={true} replacementHi="Hello --- Replaced!" />
-      <ChildComponent shouldSayHi />
       <ChildComponent />
     </div>
   );
@@ -25,12 +25,11 @@ function ChildComponent({
   replacementHi, // Value will be undefined if not provided
 }: ChildComponentProps) {
   let message = "Hi!";
-
   if (replacementHi) {
     message = replacementHi;
   }
 
-  // Alternate way of doing it
+  // Better way of doing it:
   let messageAlternate = replacementHi ?? "Hi!";
 
   return (
