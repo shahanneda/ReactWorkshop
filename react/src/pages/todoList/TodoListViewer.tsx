@@ -1,8 +1,6 @@
-import React, { createElement, useState } from "react";
+import React from "react";
 import { TodoListItem } from ".";
-import { Header } from "./Header";
 import styles from "./index.module.css";
-import { NewItemCreator } from "./NewItemCreator";
 import { TodoListItemViewer } from "./TodoListItemViewer";
 
 type TodoListViewerProps = {
@@ -23,7 +21,6 @@ export function TodoListViewer({
             item={item}
             checkClicked={() => {
               console.log("Clicked item: " + index);
-
               const oldItemsCopy = [...listItems];
               oldItemsCopy[index].completed = !oldItemsCopy[index].completed;
               setListItems(oldItemsCopy);

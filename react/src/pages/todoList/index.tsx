@@ -4,11 +4,12 @@ import { NewItemCreator } from "./NewItemCreator";
 import { TodoListViewer } from "./TodoListViewer";
 
 // Exercise ideas:
+
 // Add a  "view more" button and description for each todo list item, when clicked, "alert()" the description of that todo list item
 
 // Add a counter at the top of the page that shows you how many todo list items you have left to complete. (You can display the counter inside the Header, e.g. have the header display "Todo List Header: 7 items remaining")
 
-//  (Challenge) Add a delete button which will delete a todo list item
+//  (Challenge) Add a delete button beside each list item which will delete the todo list item
 
 // (Challenge) Save the todo list items to local storage and load them when a person reloads the page  (https://blog.logrocket.com/using-localstorage-react-hooks/)
 
