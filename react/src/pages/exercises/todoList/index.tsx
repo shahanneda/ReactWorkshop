@@ -20,7 +20,6 @@ export type TodoListItem = {
 export default function TodoListWrapper() {
   // Updating an array is tricky:
   // https://react.dev/learn/updating-arrays-in-state
-
   const [listItems, setListItems] = useState<TodoListItem[]>([
     { name: "Item 0", completed: false },
     { name: "Item 1", completed: true },
