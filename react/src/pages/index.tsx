@@ -1,11 +1,21 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
-
+const EXERCISE_COUNT = 5;
+const demos = [
+  "basicComponent",
+  "basicCustomButton",
+  "countingButton",
+  "pureCountingButton",
+  "todoList",
+  "apiCallsRaw",
+  "apiCallsWithEffects",
+];
 export default function Home() {
+  // Create an array from 1 to EXERCISE_COUNT
+  let exercises = Array.from({ length: EXERCISE_COUNT }, (_, i) => i + 1);
+
   return (
     <>
       <Head>
@@ -14,8 +24,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <h1>Hello!</h1>
+      <main className={`${styles.main}`}>
+        <h1>Welcome to the React Workshop!</h1>
+        {exercises.map((i) => {
+          return <Link href={"./exercises/" + i}> Exercise {i} </Link>;
+        })}
+        <br />
+        <br />
+        {demos.map((demo) => {
+          return <Link href={"./" + demo}> Demo: {demo} </Link>;
+        })}
       </main>
     </>
   );

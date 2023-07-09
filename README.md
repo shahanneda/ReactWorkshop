@@ -2,6 +2,8 @@ To use this repo:
 
 Make sure you have NodeJS installed: https://nodejs.org/en
 
+Make sure you have some sort of text editor (VSCode recommended https://code.visualstudio.com/)
+
 Run the following commands:
 
 1. Go into the react folder:
@@ -15,3 +17,5 @@ Run the following commands:
 
 4. View the webpage:
    http://localhost:3000/
+
+5. The exercises are in the `react/src/pages/exercises` folder
