@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Header } from "./Header";
 import { NewItemCreator } from "./NewItemCreator";
+import { TodoListItemViewer } from "./TodoListItemViewerLive";
 import { TodoListViewer } from "./TodoListViewer";
 
 // Exercise ideas:
@@ -18,9 +19,6 @@ export type TodoListItem = {
 };
 
 export default function TodoListWrapper() {
-  // Updating an array is tricky:
-  // https://react.dev/learn/updating-arrays-in-state
-
   const [listItems, setListItems] = useState<TodoListItem[]>([
     { name: "Item 0", completed: false },
     { name: "Item 1", completed: true },
@@ -30,13 +28,7 @@ export default function TodoListWrapper() {
   return (
     <>
       <Header />
-      <NewItemCreator
-        createElement={(itemName) => {
-          console.log("Create item: " + itemName);
-          setListItems([...listItems, { name: itemName, completed: false }]);
-        }}
-      />
-      <TodoListViewer listItems={listItems} setListItems={setListItems} />
+      <TodoListItemViewer item={listItems[0]} />
     </>
   );
 }
