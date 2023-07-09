@@ -1,3 +1,5 @@
+[Link to the Slides](https://docs.google.com/presentation/d/1nGp7BqQoUifNdl8xCfHi_WqVzccZt74VcZ42-1TbHJs/edit?usp=sharing)
+
 To use this repo:
 
 Make sure you have NodeJS installed: https://nodejs.org/en
