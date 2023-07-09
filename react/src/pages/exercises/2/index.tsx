@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./index.module.css";
 
 /*
-  http://localhost:3001/exercises/2
+  http://localhost:3000/exercises/2
   Exercise (based on countingButton):
   Add a "hoverCount" which keeps track of how many times the user has hovered their mouse over the button, and display it in the buttons text
 
